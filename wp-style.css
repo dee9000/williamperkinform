@@ -46,21 +46,14 @@ body {
   }
 
 
-
  .logotwyford img{
 	margin-right:1em;
 	border-radius: 7px;
  }
 
-
-
-
 .info p{
 font-weight: bold;
 }
-
-
-
 
 p{
 	font-size: 15px;
@@ -216,6 +209,11 @@ background-color:#7d45a2;
 .form-check-label{
 	font-size:12px;
 }
+
+.form-check-input1, .form-check-input2{
+	margin-left:-1.2em;
+}
+
 
 #current_school_details{
 	display: none;
