@@ -128,7 +128,7 @@ label{
 
 }
 .data-protection-statement p{
-	font-size: 12px;
+	font-size:15px;
 }
 
 
@@ -207,7 +207,7 @@ background-color:#7d45a2;
 
 
 .form-check-label{
-	font-size:12px;
+	font-size:15px;
 }
 
 .form-check-input1, .form-check-input2{
@@ -236,4 +236,13 @@ background-color:#7d45a2;
 
 .table-responsive{
 	width: 100%;
+}
+
+
+#myDIV {
+  font-size:15px;
+	background-color: #ffff;
+	padding:13px;
+	border-radius: 7px;
+  display:none;
 }
