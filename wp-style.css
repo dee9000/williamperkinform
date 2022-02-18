@@ -240,9 +240,10 @@ background-color:#7d45a2;
 
 
 #myDIV {
-  font-size:15px;
+  font-size:14px;
 	background-color: #ffff;
 	padding:13px;
-	border-radius: 7px;
+	margin-bottom:2em;
+	border-radius: 5px;
   display:none;
 }
