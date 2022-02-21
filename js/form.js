@@ -62,7 +62,7 @@ function repeat2() {
 /*JAVASCRIPT FOR SUBJECT CHOICES*/
 
 /*ENGINE TO RESET FORM DATA, AS WELL AS DROP DOWN DIV AND RESET*/
- function fun(){
+ function clear_reset(){
    document.getElementById("subject_choice").reset();
    document.getElementById("exampleFormControlSelect1").disabled=false;
    /*NEED TO GIVE EACH BLOCK AND ID AND THEN*/
