@@ -674,13 +674,13 @@
             <p>Note: Further Maths can only be selected as a 4th choice as it sits outside of the option blocks</p>
           </div>
          </div>
-         <div class="form-group">
+         <div class="form-group" id="subject_choice">
            <label for="exampleFormControlSelect1">Choice 1<span>&#42;</span></label>
-           <select class="form-control" id="exampleFormControlSelect1">
-             <option>--select--</option>
+           <select class="form-control" id="exampleFormControlSelect1" onchange="showDiv(this)">
+    <option>--select--</option>
     <optgroup label="Block A">
  		<option value="art-block-a">Art</option>
- 		<option value="computing-block-a" >Computing</option>
+ 		<option value="computing-block-a">Computing</option>
  		<option value="english-language-block-a" >English Language</option>
  		<option value="history-block-a" >History</option>
  		<option value="maths-block-a" >Maths</option>
@@ -716,15 +716,46 @@
  		<option value="religious-studies-block-d" >Religion, Philosophy and Ethics</option>
  		<option value="spanish-block-d" >Spanish</option>
  	</optgroup>
-
-
            </select>
-         </div>
+  <!--DROPDOWN SUBJECT BLOCKS PANE-->
+  <div id="subj-bloc-req" class="subj-bloc-req">
+  <p>Block: Block A</p>
+  <p>Requirement: Grade 6 in Art.</p>
+  </div>
+  <div id="subj-bloc-req-0" class="subj-bloc-req">
+  <p>Block: Block A</p>
+  <p>Requirement: Grade 7 in Computing,
+    or grade 7 in Mathematics and either grade 76 in Double Science or grade 666 in Triple Science.</p>
+  </div>
+  <div id="subj-bloc-req-1" class="subj-bloc-req">
+  <p>Block: Block A</p>
+  <p>Requirement: 6 in English Language OR 6 in English Literature.</p>
+  </div>
+  <div id="subj-bloc-req-2" class="subj-bloc-req">
+  <p>Block: Block A</p>
+  <p>Requirement: 7 in History and 6 in English (Literature or Language).</p>
+  </div>
+  <div id="subj-bloc-req-3" class="subj-bloc-req">
+  <p>Block: Block A</p>
+  <p>Requirement: 7 in Mathematics.</p>
+  </div>
+  <div id="subj-bloc-req-4" class="subj-bloc-req">
+  <p>Block: Block A</p>
+  <p>Requirement: Grade 6 in PE or 66 in Science. Students should also play for an external sports team.</p>
+  </div>
+  <div id="subj-bloc-req-5" class="subj-bloc-req">
+  <p>Block: Block A</p>
+  <p>Requirement: 6 in English (Literature or Language) and 6 in Mathematics.</p>
+  </div>
+
+  <!--DROPDOWN SUBJECT BLOCKS PANE END-->
+  </div>
+
          <div class="form-group">
            <label for="exampleFormControlSelect1">Choice 2<span>&#42;</span></label>
-           <select class="form-control" id="exampleFormControlSelect1">
+           <select class="form-control" id="exampleFormControlSelect2" onchange="showDiv(this)">
              <option>--select--</option>
-    <optgroup label="Block A">
+    <optgroup label="Block A" id="block_a" disabled>
     <option value="art-block-a" >Art</option>
     <option value="computing-block-a" >Computing</option>
     <option value="english-language-block-a" >English Language</option>
@@ -762,15 +793,51 @@
     <option value="religious-studies-block-d" >Religion, Philosophy and Ethics</option>
     <option value="spanish-block-d" >Spanish</option>
   </optgroup>
-
            </select>
+
+           <!--DROPDOWN SUBJECT BLOCKS PANE-->
+           <div id="subj-bloc-req-6" class="subj-bloc-req">
+           <p>Block: Block B</p>
+           <p>Requirement: Grade 77 in Double Science,
+              or grade 776 in Triple Science with a 7 in Chemistry. Grade 6 in Mathematics is also required.</p>
+           </div>
+           <div id="subj-bloc-req-7" class="subj-bloc-req">
+           <p>Block: Block B</p>
+           <p>Block: Block B Requirement: 6 in English (Literature or Language) and a 5 in Mathematics.</p>
+           </div>
+           <div id="subj-bloc-req-8" class="subj-bloc-req">
+           <p>Block: Block B</p>
+           <p>Requirement: Grade 7 or 6 in Maths and English (Literature or Language). Grade 7 can be in either Maths or English</p>
+           </div>
+           <div id="subj-bloc-req-9" class="subj-bloc-req">
+           <p>Block: Block B</p>
+           <p>Requirement: 76 in English Language & English Literature (the 7 can be in either language or literature)</p>
+           </div>
+           <div id="subj-bloc-req-10" class="subj-bloc-req">
+           <p>Block: Block B</p>
+           <p>Requirement: 7 in Geography and 6 in English (Literature or Language).</p>
+           </div>
+           <div id="subj-bloc-req-11" class="subj-bloc-req">
+           <p>Block: Block B</p>
+           <p>Requirement: 7 in German.</p>
+           </div>
+           <div id="subj-bloc-req-12" class="subj-bloc-req">
+           <p>Block: Block B</p>
+           <p>Requirement: Grade 77 in Double Science or grade 776 in Triple Science and a 7 in Physics. Grade 6 in Mathematics is also required.</p>
+           </div>
+
+           <!--DROPDOWN SUBJECT BLOCKS PANE END-->
+
+
+
+
          </div>
          <div class="form-group">
            <label for="exampleFormControlSelect1">Choice 3<span>&#42;</span></label>
-           <select class="form-control" id="exampleFormControlSelect1">
+           <select class="form-control" id="exampleFormControlSelect3" onchange="showDiv(this)">
              <option>--select--</option>
-    <optgroup label="Block A">
-    <option value="art-block-a" >Art</option>
+    <optgroup label="Block A" id="block_a" disabled>
+    <option value="art-block-a">Art</option>
     <option value="computing-block-a" >Computing</option>
     <option value="english-language-block-a" >English Language</option>
     <option value="history-block-a" >History</option>
@@ -778,7 +845,7 @@
     <option value="physical-education-block-a" >Physical Education</option>
     <option value="psychology-block-a" >Psychology</option>
   </optgroup>
-  <optgroup label="Block B">
+  <optgroup label="Block B" id="block_b" disabled>
     <option value="chemistry-block-b" >Chemistry</option>
     <option value="business-studies-block-b" >Business Studies</option>
     <option value="economics-block-b" >Economics</option>
@@ -807,16 +874,52 @@
     <option value="religious-studies-block-d" >Religion, Philosophy and Ethics</option>
     <option value="spanish-block-d" >Spanish</option>
   </optgroup>
-
            </select>
+                      <!--DROPDOWN SUBJECT BLOCKS PANE-->
+                      <div id="subj-bloc-req-13" class="subj-bloc-req">
+                      <p>Block: Block C</p>
+                      <p>Requirement: Grade 77 in Double Science or grade 776 in Triple Science with a 7 in Biology. Grade 6 in Mathematics is also required.</p>
+                      </div>
+                      <div id="subj-bloc-req-14" class="subj-bloc-req">
+                        <p>Block: Block C</p>
+                      <p>Requirement: 6 in English (Literature or Language) and a 5 in Mathematics.</p>
+                      </div>
+                      <div id="subj-bloc-req-15" class="subj-bloc-req">
+                        <p>Block: Block C</p>
+                      <p>Requirement: Grade 77 in Double Science or grade 776 in Triple Science with a 7 in Chemistry. Grade 6 in Mathematics is also required.</p>
+                      </div>
+                      <div id="subj-bloc-req-16" class="subj-bloc-req">
+                        <p>Block: Block C</p>
+                      <p>Requirement: Grade 7 or 6 in Maths and English (Literature or Language). Grade 7 can be in either Maths or English</p>
+                      </div>
+                      <div id="subj-bloc-req-17" class="subj-bloc-req">
+                        <p>Block: Block C</p>
+                      <p>Requirement: 7 in French.</p>
+                      </div>
+                      <div id="subj-bloc-req-18" class="subj-bloc-req">
+                        <p>Block: Block C</p>
+                      <p>Requirement: 7 in History and 6 in English (Literature or Language).</p>
+                      </div>
+                      <div id="subj-bloc-req-19" class="subj-bloc-req">
+                        <p>Block: Block C</p>
+                      <p>Requirement: 7 in Mathematics.</p>
+                      </div>
+                      <div id="subj-bloc-req-20" class="subj-bloc-req">
+                        <p>Block: Block C</p>
+                      <p>RRequirement: 6 in English (Literature or Language) and 6 in another humanity (e.g. RE, History, Geography or Sociology).</p>
+                      </div>
+
+                      <!--DROPDOWN SUBJECT BLOCKS PANE END-->
+
+
          </div>
          <hr>
          <p>For the students who are likely to be joining our William Perkin Additional Programme with a fourth course choice, the qualifications begin at 8 or more GCSE passes including Maths and English, with an average GCSE grade score of 7.5 or better (equivalent to roughly half of your grades at half 7/A and half 8/A*) and for Maths and English this is a 7 or better. Please select the course you expect to study:</p>
          <div class="form-group">
            <label for="exampleFormControlSelect1">Choice 4<span>&#42;</span></label>
-           <select class="form-control" id="exampleFormControlSelect1">
+           <select class="form-control" id="exampleFormControlSelect4" onchange="showDiv(this)">
              <option>--select--</option>
-    <optgroup label="Block A">
+    <optgroup label="Block A" id="block_a" disabled>
     <option value="art-block-a" >Art</option>
     <option value="computing-block-a" >Computing</option>
     <option value="english-language-block-a" >English Language</option>
@@ -825,7 +928,7 @@
     <option value="physical-education-block-a" >Physical Education</option>
     <option value="psychology-block-a" >Psychology</option>
   </optgroup>
-  <optgroup label="Block B">
+  <optgroup label="Block B" id="block_b" disabled>
     <option value="chemistry-block-b" >Chemistry</option>
     <option value="business-studies-block-b" >Business Studies</option>
     <option value="economics-block-b" >Economics</option>
@@ -834,7 +937,7 @@
     <option value="german-block-b" >German</option>
     <option value="physics-block-b" >Physics</option>
   </optgroup>
-  <optgroup label="Block C">
+  <optgroup label="Block C" id="block_c" disabled>
     <option value="biology-block-c" >Biology</option>
     <option value="business-studies-block-c" >Business Studies</option>
     <option value="chemistry-block-c" >Chemistry</option>
@@ -858,8 +961,50 @@
     <option value="further_maths-block-fm" >Further Maths</option>
   </optgroup>
            </select>
+           <!--DROPDOWN SUBJECT BLOCKS PANE-->
+           <div id="subj-bloc-req-21" class="subj-bloc-req">
+           <p>Block: Block D</p>
+           <p>Requirement: Grade 77 in Double Science or grade 776 in Triple Science with a 7 in Biology. Grade 6 in Mathematics is also required.</p>
+           </div>
+           <div id="subj-bloc-req-22" class="subj-bloc-req">
+             <p>Block: Block D</p>
+           <p>Requirement: 76 in English Language & English Literature (the 7 can be in either language or literature).</p>
+           </div>
+           <div id="subj-bloc-req-23" class="subj-bloc-req">
+             <p>Block: Block D</p>
+           <p>Requirement: 7 in Mathematics.</p>
+           </div>
+           <div id="subj-bloc-req-24" class="subj-bloc-req">
+             <p>Block: Block D</p>
+           <p>Requirement: Grade 6 in PE or 66 in Science. Students should also play for an external sports team.</p>
+           </div>
+           <div id="subj-bloc-req-25" class="subj-bloc-req">
+             <p>Block: Block D</p>
+           <p>Requirement: Grade 77 in Double Science or grade 776 in Triple Science and a 7 in Physics. Grade 6 in Mathematics is also required.</p>
+           </div>
+           <div id="subj-bloc-req-26" class="subj-bloc-req">
+             <p>Block: Block D</p>
+           <p>Requirement: 6 in English (Literature or Language) and 6 in Mathematics.</p>
+           </div>
+           <div id="subj-bloc-req-27" class="subj-bloc-req">
+             <p>Block: Block D</p>
+           <p>Requirement: 6 or A in R.E. and 6 in English (Literature or Language).</p>
+           </div>
+           <div id="subj-bloc-req-28" class="subj-bloc-req">
+             <p>Block: Block D</p>
+           <p>Requirement: 7 in Spanish.</p>
+           </div>
+           <div id="subj-bloc-req-29" class="subj-bloc-req">
+             <p>Block: Block FM</p>
+           <p>Requirement: 9 in GCSE Mathematics.</p>
+           </div>
+
+
+           <!--DROPDOWN SUBJECT BLOCKS PANE END-->
+
+
          </div>
-         <button type="submit" class="btn-custom">Clear Choices</button>
+         <button type="submit" class="btn-custom" value = "Reset data" onClick = "fun()">Clear Choices</button>
          <br>
          <h1 class="subheader">William Perkin Scholar Programme</h1>
 <p>The William Perkin Scholar Programme is aimed at gifted and passionate pupils who have a clear idea of their future pathways. The programme will involve academic mentoring, extended project qualifications, early entry university support and, potentially, target Oxbridge support. Please select the programme you would like to be considered for.</p>

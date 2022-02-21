@@ -176,6 +176,42 @@ label {
 
 }
 
+/*CHOICE DROP DOWN*/
+.subj-bloc-req{
+	background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 7px auto;
+  width: 800px;
+	display:none;
+}
+.subj-bloc-req p{
+	font-size: 17px;
+	text-align: justify;
+	font-weight: bold;
+	color: #623580;
+
+}
+
+#subj-bloc-req,#subj-bloc-req-0{
+	background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 5px auto;
+  width: 800px;
+	display:none;
+}
+#subj-bloc-req p{
+	font-size: 17px;
+	text-align: justify;
+	font-weight: bold;
+	color: #623580;
+
+}
 
 
 .btn-custom{
