@@ -674,7 +674,9 @@
             <p>Note: Further Maths can only be selected as a 4th choice as it sits outside of the option blocks</p>
           </div>
          </div>
-         <div class="form-group" id="subject_choice">
+
+
+         <form class="form-group" id="subject_choice">
            <label for="exampleFormControlSelect1">Choice 1<span>&#42;</span></label>
            <select class="form-control" id="exampleFormControlSelect1" onchange="showDiv(this)">
     <option>--select--</option>
@@ -688,13 +690,13 @@
  		<option value="psychology-block-a" >Psychology</option>
  	</optgroup>
  	<optgroup label="Block B">
- 		<option value="chemistry-block-b" >Chemistry</option>
- 		<option value="business-studies-block-b" >Business Studies</option>
- 		<option value="economics-block-b" >Economics</option>
+ 		<option value="chemistry-block-b">Chemistry</option>
+ 		<option value="business-studies-block-b">Business Studies</option>
+ 		<option value="economics-block-b" Economics</option>
  		<option value="english-literature-block-b" >English Literature</option>
- 		<option value="geography-block-b" >Geography</option>
- 		<option value="german-block-b" >German</option>
- 		<option value="physics-block-b" >Physics</option>
+ 		<option value="geography-block-b">Geography</option>
+ 		<option value="german-block-b">German</option>
+ 		<option value="physics-block-b">Physics</option>
  	</optgroup>
  	<optgroup label="Block C">
  		<option value="biology-block-c" >Biology</option>
@@ -716,7 +718,8 @@
  		<option value="religious-studies-block-d" >Religion, Philosophy and Ethics</option>
  		<option value="spanish-block-d" >Spanish</option>
  	</optgroup>
-           </select>
+</select>
+
   <!--DROPDOWN SUBJECT BLOCKS PANE-->
   <div id="subj-bloc-req" class="subj-bloc-req">
   <p>Block: Block A</p>
@@ -747,12 +750,10 @@
   <p>Block: Block A</p>
   <p>Requirement: 6 in English (Literature or Language) and 6 in Mathematics.</p>
   </div>
-
+<br>
   <!--DROPDOWN SUBJECT BLOCKS PANE END-->
-  </div>
 
-         <div class="form-group">
-           <label for="exampleFormControlSelect1">Choice 2<span>&#42;</span></label>
+           <label for="exampleFormControlSelect2">Choice 2<span>&#42;</span></label>
            <select class="form-control" id="exampleFormControlSelect2" onchange="showDiv(this)">
              <option>--select--</option>
     <optgroup label="Block A" id="block_a" disabled>
@@ -825,15 +826,14 @@
            <p>Block: Block B</p>
            <p>Requirement: Grade 77 in Double Science or grade 776 in Triple Science and a 7 in Physics. Grade 6 in Mathematics is also required.</p>
            </div>
+           <br>
 
            <!--DROPDOWN SUBJECT BLOCKS PANE END-->
 
 
 
 
-         </div>
-         <div class="form-group">
-           <label for="exampleFormControlSelect1">Choice 3<span>&#42;</span></label>
+           <label for="exampleFormControlSelect3">Choice 3<span>&#42;</span></label>
            <select class="form-control" id="exampleFormControlSelect3" onchange="showDiv(this)">
              <option>--select--</option>
     <optgroup label="Block A" id="block_a" disabled>
@@ -912,11 +912,9 @@
                       <!--DROPDOWN SUBJECT BLOCKS PANE END-->
 
 
-         </div>
          <hr>
          <p>For the students who are likely to be joining our William Perkin Additional Programme with a fourth course choice, the qualifications begin at 8 or more GCSE passes including Maths and English, with an average GCSE grade score of 7.5 or better (equivalent to roughly half of your grades at half 7/A and half 8/A*) and for Maths and English this is a 7 or better. Please select the course you expect to study:</p>
-         <div class="form-group">
-           <label for="exampleFormControlSelect1">Choice 4<span>&#42;</span></label>
+           <label for="exampleFormControlSelect4">Choice 4<span>&#42;</span></label>
            <select class="form-control" id="exampleFormControlSelect4" onchange="showDiv(this)">
              <option>--select--</option>
     <optgroup label="Block A" id="block_a" disabled>
@@ -1003,8 +1001,11 @@
            <!--DROPDOWN SUBJECT BLOCKS PANE END-->
 
 
-         </div>
          <button type="submit" class="btn-custom" value = "Reset data" onClick = "clear_reset()">Clear Choices</button>
+         <input type="reset" value="Reset" class="btn-custom">
+
+
+       </form>
          <br>
          <h1 class="subheader">William Perkin Scholar Programme</h1>
 <p>The William Perkin Scholar Programme is aimed at gifted and passionate pupils who have a clear idea of their future pathways. The programme will involve academic mentoring, extended project qualifications, early entry university support and, potentially, target Oxbridge support. Please select the programme you would like to be considered for.</p>

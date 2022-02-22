@@ -65,16 +65,18 @@ function repeat2() {
  function clear_reset(){
    document.getElementById("subject_choice").reset();
    document.getElementById("exampleFormControlSelect1").disabled=false;
-   /*NEED TO GIVE EACH BLOCK AND ID AND THEN*/
-   document.getElementById("block_a").disabled=false;
-   /*NEED TO GIVE EACH BLOCK AND ID AND THEN*/
-   document.getElementById('subj-bloc-req').style.display = "none";
-   document.getElementById('subj-bloc-req-0').style.display = "none";
-   document.getElementById('subj-bloc-req-1').style.display = "none";
+   document.getElementById("exampleFormControlSelect2").disabled=false;
+   document.getElementById("exampleFormControlSelect3").disabled=false;
+   document.getElementById("exampleFormControlSelect4").disabled=false;
 
+   document.getElementById("block_a").disabled=false;
+   document.getElementByClassName('subj-bloc-req').style.display = "none";/*show div*/
 
 
  }
+
+
+
 function showDiv(select){
   /*ART*/
    if(select.value=='art-block-a'){
