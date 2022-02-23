@@ -178,6 +178,9 @@ label {
 	display: none;
 
 }
+label {
+	font-weight: bold;
+}
 
 /*CHOICE DROP DOWN*/
 .subj-bloc-req{
